@@ -20,6 +20,16 @@ Motion blur frequently occurs in real-world image acquisition scenarios such as 
 - The **GAN** model produced visually plausible results but showed lower numerical scores under limited training data.
 - Overall, reconstruction-based models demonstrated more stable performance given constrained resources.
 
+## Project Structure
+```text
+src/
+├── preprocessing/   # Data loading and preprocessing
+├── models/           # U-Net and GAN architectures
+├── train/            # Training scripts
+├── eval/             # Evaluation and metrics
+└── inference/        # Inference on new images
+```
+
 ## Code
 - `src/preprocessing/paired_dataset.py`: Loads paired blurred/sharp images and applies resizing and normalization.
 - `src/models/UNet.py`: Defines the U-Net architecture with encoder–decoder blocks and skip connections.
