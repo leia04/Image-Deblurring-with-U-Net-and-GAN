@@ -6,6 +6,13 @@ This project explores deep learning-based image deblurring using paired blurred 
 ## Problem
 Motion blur frequently occurs in real-world image acquisition scenarios such as handheld photography, fast object motion, and low-light conditions. Removing blur while preserving fine details and realistic textures remains a challenging inverse problem. This project aims to restore sharp images from blurred inputs using convolutional neural networks.
 
+
+## Key Findings
+- The **U-Net** model achieved higher quantitative performance (PSNR and SSIM) in this experimental setting.
+- The **GAN** model produced visually plausible results but showed lower numerical scores under limited training data.
+- Overall, reconstruction-based models demonstrated more stable performance given constrained resources.
+
+
 ## Approach
 - **Dataset**: Paired blurred and sharp images derived from the GoPro (GOPRO_Large) dataset.
 - **Preprocessing**: Images are resized to 256×256 and normalized prior to training.
@@ -15,10 +22,6 @@ Motion blur frequently occurs in real-world image acquisition scenarios such as 
 
 > Due to computational constraints, training was conducted on a limited subset of the dataset.
 
-## Key Findings
-- The **U-Net** model achieved higher quantitative performance (PSNR and SSIM) in this experimental setting.
-- The **GAN** model produced visually plausible results but showed lower numerical scores under limited training data.
-- Overall, reconstruction-based models demonstrated more stable performance given constrained resources.
 
 ## Project Structure
 ```text
